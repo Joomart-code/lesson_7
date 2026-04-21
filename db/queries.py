@@ -20,6 +20,10 @@ select_tasks_uncompleted = 'SELECT * FROM tasks WHERE completed = 0'
 
 update_task = 'UPDATE tasks SET task = ? WHERE id = ?'
 
+update_status = 'UPDATE tasks SET completed = ? WHERE id = ?'
+
 
 
 delete_task = 'DELETE FROM tasks WHERE id = ?'
+
+delete_completed = 'DELETE FROM tasks WHERE completed = 1'  
